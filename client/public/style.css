@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  color: #2c3e50;
+  margin: 0 0 20px;
+}
+
+.metric {
+  margin: 10px 0;
+  padding: 15px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+#status {
+  font-weight: bold;
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+#timestamp {
+  color: #9b59b6;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+#status.connected {
+  color: #2ecc71;
+}
+
+#status.disconnected {
+  color: #f1c40f;
+}
