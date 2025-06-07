@@ -26,9 +26,9 @@ const log = (data) => {
       { flag: "a" } // 'a' = append (default)
     );
 
-    console.log("📝 Logged:", entry);
+    console.log("Logged:", entry);
   } catch (error) {
-    console.error("❌ Failed to log data:", error.message);
+    console.error("Failed to log data:", error.message);
   }
 };
 

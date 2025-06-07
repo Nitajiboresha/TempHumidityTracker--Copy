@@ -1,5 +1,3 @@
-// app.js
-var WebSocket = require("ws");
 const socket = new WebSocket("ws://localhost:3035");
 
 const tempElement = document.getElementById("temp");
@@ -7,7 +5,7 @@ const humidityElement = document.getElementById("humidity");
 const statusElement = document.getElementById("status");
 
 socket.addEventListener("open", (event) => {
-  statusElement.textContent = "Connected ✅";
+  statusElement.textContent = "Connected";
   statusElement.style.color = "green";
   statusElement.className = "connected";
 });
@@ -29,7 +27,7 @@ socket.addEventListener("error", (error) => {
 });
 
 socket.addEventListener("close", () => {
-  statusElement.textContent = "Disconnected 🔄";
+  statusElement.textContent = "Disconnected";
   statusElement.style.color = "orange";
   statusElement.className = "disconnected";
   setTimeout(() => {
