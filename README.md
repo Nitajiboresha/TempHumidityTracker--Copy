@@ -1,25 +1,47 @@
-# Humidity and Temperature Tracker
+#   Temperature and Humidity Tracker
 
-## Overview
-This project tracks temperature and humidity data in real-time. It consists of a client that displays the data and a server that generates and sends mock data.
+##  Overview
 
-## Setup
+-   This system tracks temperature and humidity in real time.
+
+-   It updates every minute.
+
+-   It consists of a server running on localhost:3036 and a client on localhost:3035.
+
+##  Setup
 
 ### Client
-1. Navigate to the `client` folder.
-2. Run `npm install` to install dependencies.
-3. Run `npm start` to start the client server.
+
+-   Navigate to the client folder.
+
+-   Run npm install to install dependencies.
+
+-   Run npm start to start the client server.
 
 ### Server
-1. Navigate to the `server` folder.
-2. Run `npm install` to install dependencies.
-3. Run `npm start` to start the server.
 
-## Features
-- Real-time data updates every minute.
-- Data is logged to a JSON file.
-- Basic error handling and reconnection logic.
+-   Navigate to the server folder.
 
-## Usage
-- Open your browser and navigate to `http://localhost:8080` to view the client.
-- The server will send mock data to the client every minute.
+-   Run npm install to install dependencies.
+
+-   Run npm start to start the server.
+
+##  Features
+
+-    Real-time data updates every minute.
+
+-    Error handling.
+
+-    Takes data from the client, converts it to JSON, and sends it to the server.
+
+-   The server logs the JSON data and sends it back to the client, where it is converted back to JavaScript for display.
+
+-  The system is dynamic to enable multiple packages.
+
+-    Data is logged in a data.json file.
+
+##  Usage
+
+-   Open your browser and navigate to http://localhost:3035 to view the client.
+
+-   The server will send mock data to the client every minute.

@@ -1,4 +1,5 @@
 // app.js
+var WebSocket = require("ws");
 const socket = new WebSocket("ws://localhost:3035");
 
 const tempElement = document.getElementById("temp");
