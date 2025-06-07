@@ -8,7 +8,7 @@ const path = require("path");
 
 // Ensure the 'logs' directory exists
 const logDir = "./logs";
-const logPath = path.join(logDir, "data-log.json");
+const logPath = path.join(logDir, "data.json");
 
 if (!fs.existsSync(logDir)) {
   fs.mkdirSync(logDir);

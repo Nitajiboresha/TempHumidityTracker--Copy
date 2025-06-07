@@ -28,17 +28,17 @@
 
 ##  Features
 
--    Real-time data updates every minute.
+-   Real-time data updates every minute.
 
--    Error handling.
+-   Error handling.
 
--    Takes data from the client, converts it to JSON, and sends it to the server.
+-   Takes data from the client, converts it to JSON, and sends it to the server.
 
 -   The server logs the JSON data and sends it back to the client, where it is converted back to JavaScript for display.
 
--  The system is dynamic to enable multiple packages.
+-   The system is dynamic to enable multiple packages.
 
--    Data is logged in a data.json file.
+-   Data is logged in a data.json file.
 
 ##  Usage
 

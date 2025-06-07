@@ -29,6 +29,12 @@ wss.on("connection", (ws) => {
 });
 
 http.createServer((req, res) => {
+  if (req.url === "/favicon.ico") {
+    res.writeHead(200, { "Content-Type": "image/x-icon" });
+    res.end();
+    return;
+  }
+
   res.writeHead(200, { "Content-Type": "text/plain" });
   res.end(`Connect to WebSocket at ws://localhost:${WS_PORT}`);
 }).listen(HTTP_PORT, () => {
