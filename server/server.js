@@ -14,7 +14,7 @@ wss.on("connection", (ws) => {
     ws.send(JSON.stringify(data));
     logger.log(data); // Log data to file
     console.log("Sent:", data);
-  }, 60000);
+  }, 60000); // Every 60 seconds
 
   ws.on("close", () => {
     console.log("Client disconnected");
