@@ -1,12 +1,6 @@
-/*
-  Logs temperature/humidity data to a JSON file and console.
-  Creates a 'logs' directory if missing.
-*/
-
 const fs = require("fs");
 const path = require("path");
 
-// Ensure the 'logs' directory exists
 const logDir = "./logs";
 const logPath = path.join(logDir, "data.json");
 
@@ -19,11 +13,10 @@ const log = (data) => {
     const timestamp = new Date().toISOString();
     const entry = { timestamp, ...data };
 
-    // Append to log file
     fs.appendFileSync(
       logPath,
       JSON.stringify(entry) + "\n",
-      { flag: "a" } // 'a' = append (default)
+      { flag: "a" }
     );
 
     console.log("📝 Logged:", entry);

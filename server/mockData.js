@@ -1,8 +1,3 @@
-/*
-  Generates realistic mock temperature/humidity data with timestamps.
-  Simulates gradual changes for testing UI/backend.
-*/
-
 let lastTemp = 20.0;  // Default starting values
 let lastHumidity = 50;
 
