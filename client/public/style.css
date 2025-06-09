@@ -1,8 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   padding: 20px;
-  background: linear-gradient(135deg, #00FFFF, #0000FF
-);
+  background: linear-gradient(135deg, #00FFFF, #0000FF);
   margin: 0;
   display: flex;
   flex-direction: column;

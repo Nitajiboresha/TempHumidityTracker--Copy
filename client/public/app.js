@@ -33,5 +33,5 @@ socket.addEventListener("close", () => {
   setTimeout(() => {
     socket.close();
     socket = new WebSocket("ws://localhost:3035");
-  }, 5000); // Attempt to reconnect after 5 seconds
+  }, 5000);
 });

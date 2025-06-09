@@ -1,4 +1,4 @@
-let lastTemp = 20.0;  // Default starting values
+let lastTemp = 20.0;
 let lastHumidity = 50;
 
 const generateMockData = (options = {}) => {
@@ -7,11 +7,10 @@ const generateMockData = (options = {}) => {
     maxTemp = 40,
     minHumidity = 30,
     maxHumidity = 80,
-    fluctuationTemp = 2,    // Max ±2°C change
-    fluctuationHumidity = 5, // Max ±5% change
+    fluctuationTemp = 2,
+    fluctuationHumidity = 5,
   } = options;
 
-  // Simulate small fluctuations from last value
   lastTemp = Math.min(
     maxTemp,
     Math.max(minTemp, lastTemp + (Math.random() * fluctuationTemp * 2 - fluctuationTemp))
