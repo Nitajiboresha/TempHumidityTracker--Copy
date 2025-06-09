@@ -42,6 +42,6 @@
 
 ##  Usage
 
--   Open your browser and navigate to http://localhost:3035 to view the client.
+-   Open your browser and navigate to http://localhost:8080 to access the system.
 
 -   The server will send mock data to the client every minute.
