@@ -14,15 +14,11 @@
 
 -   Navigate to the client folder.
 
--   Run npm install to install dependencies.
-
 -   Run npm start to start the client server.
 
 ### Server
 
 -   Navigate to the server folder.
-
--   Run npm install to install dependencies.
 
 -   Run npm start to start the server.
 
